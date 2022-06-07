@@ -1,6 +1,15 @@
 # StormForge - Technical Challenge
 
 ## Requirements
+* Make sure the web application is running locally on your machine
+* Port forward to all components under test:
+    ```
+    kubectl port-forward <pod> <external_ip>:<internal_ip>
+    ```
+    * Use the following external_ip's:
+        * voting-service: 5555
+        * result-service: 9876
+        * redis: 6379
 * Python 3 installed
 * Pip installed
 * Install all requirements from requirements.txt ideally in a virtual environment
